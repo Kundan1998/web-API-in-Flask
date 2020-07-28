@@ -1,0 +1,16 @@
+{
+	"condition": {
+		
+			"status1": 200,
+    			"msg1": "Success",
+		    "status2": 201,
+     			"msg2": "Failure: password should be of length 6",
+		    "status3": 202,
+     			"msg3": "Failure: password to have 1 character and 1 number",		
+		    "status4": 203,
+     			"msg4": "Failure: only characters allowed in username"
+	}
+	
+	
+		
+}

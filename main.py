@@ -11,18 +11,18 @@ def dashboard_login(): # functioon of endpoint
         password=request.form.get('pswd') # taking password
         if not username.isalpha():
             print(condition["status4"])
-            return('{  "status":'+str(condition["status4"])+","+"<br>"+'"msg": "'+(condition["msg4"]+'"'+"<br>"+"}"))
+            return('{  "status":'+str(condition["status4"])+","+"<br>"+"&nbsp;&nbsp;&nbsp;"+'"msg": "'+(condition["msg4"]+'"'+"<br>"+"}"))
             #return(str(condition["msg4"]))
         elif len(password)<6:
-            return('{  "status":'+str(condition["status2"])+","+"<br>"+'"msg": "'+(condition["msg2"]+'"'+"<br>"+"}"))
+            return('{  "status":'+str(condition["status2"])+","+"<br>"+"&nbsp;&nbsp;&nbsp;"+'"msg": "'+(condition["msg2"]+'"'+"<br>"+"}"))
             #return(str(condition["msg2"]))
         elif password.isalpha():
             print(condition["status2"])
-            return('{  "status":'+str(condition["status3"])+","+"<br>"+'"msg": "'+(condition["msg3"]+'"'+"<br>"+"}"))
+            return('{  "status":'+str(condition["status3"])+","+"<br>"+"&nbsp;&nbsp;&nbsp;"+'"msg": "'+(condition["msg3"]+'"'+"<br>"+"}"))
             #return(str(condition["msg3"]))
         
         else:
-            return('{  "status":'+str(condition["status1"])+","+"<br>"+'"msg": "'+(condition["msg1"]+'"'+"<br>"+"}"))
+            return('{  "status":'+str(condition["status1"])+","+"<br>"+"&nbsp;&nbsp;&nbsp;"+'"msg": "'+(condition["msg1"]+'"'+"<br>"+"}"))
             #return(str(condition["msg1"]))
 
     else:
